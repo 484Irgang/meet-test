@@ -36,7 +36,7 @@ const PeerClientProvider = ({ children }: { children: ReactNode }) => {
     const peerConnection = new RTCPeerConnection(peerConfig);
     setPeer(peerConnection);
 
-    const socket = new WebSocket("wss://a70a-186-251-22-19.ngrok-free.app");
+    const socket = new WebSocket("wss://enhanced-dory-smiling.ngrok-free.app");
     socket.onopen = (event) => {
       console.info(`Connected to socket: ${event}`);
       setSocket(socket);
